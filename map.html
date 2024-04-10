@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <script>
+        // map creates a new array by performing operations on each array element 
+        // map doesnot work on empty values 
+        // map doesnot change the original array 
+        const numbers=[1,2,3,4,5]
+
+        // const squareFunction=num=>{
+        //     return num**2
+        // } 
+        // const squareFunction=num=>num**2
+        
+
+        
+        // const result=numbers.map(num=>num*10) 
+
+        // const multiplication=num=>{
+        //     return num*10
+        // }
+        // // const multiplication=num=>num*10
+        // const result=numbers.map(multiplication)
+        // document.write(`${result}`)
+
+        //flatMap
+        const result1=numbers.flatMap(num=>num**3)
+        document.write(`${result1}`)
+    </script>
+</body>
+</html>
