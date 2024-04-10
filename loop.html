@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+<body>
+    <script>
+        // repeatation or iteration
+        // for loop
+        // while loop
+        // do while loop
+        // nested loop
+        // for in loop
+        // for of loop
+        for(i=1 ; i<= 15; i++){
+            // non breaking space
+            document.write(`${i}&nbsp;`)
+        }
+        document.write(`<br>`)
+        for(i=15 ; i>= 1; i--)
+        {
+            document.write(`${i}&nbsp;`)
+        }
+        document.write(`<br>`)
+        // const n=parseInt(prompt('Enter the no. to get its multiplication'))
+        // for(i=1; i<=10; i++)
+        // {
+        //     document.write(`${n}*${i}=${n*i}<br>`)
+        // }
+        document.write(`<br>`)
+        // nested loop: loop inside another loop 
+        for(i=1; i<=5; i++){
+            for(j=1; j<=10; j++){
+                document.write(`${i}*${j}=${i*j}<br>`)
+
+            }
+            document.write(`<hr>`)
+        }
+    </script>
+</body>
+</html>
