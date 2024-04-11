@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        //function is a block of code to perform the particular task and it is reusable
+        // we call the function using parenthesis in the most of the cases eg: demofunction()
+        // we define the function like this 
+        //function demoFunction(){..statement goes here...}
+        
+        //define the function
+        //
+        
+        //arrow function
+        const demoFunction=()=>document.write('This is a arrow function')
+        
+
+
+        //call the function
+        demoFunction()
+
+        //function with arguments
+
+
+        //define the function
+        // function addFunction(FirstNum,secondNum){
+        //     const sum=FirstNum+secondNum
+        //     document.write(`<br> the sum is ${sum}`)
+        // }
+
+        // //using arrow function
+        // const addFunction=()=>document.write(`<br> the sum is ${sum}`)
+
+        const addFunction=(a,b)=>{
+            document.write(`<br> ${a+b}`)
+        }
+
+
+        //call the function
+        // addFunction(20,30)
+
+        //function with return type
+
+
+        // //define the function
+        // function testFunction(x,y){
+        //     return x*y
+        // }
+
+        // const testFunction=(x,y)=>{
+        //     return x*y
+        // }
+
+
+        //callt he function
+        // const result = testFunction(10,15)
+        // document.write(`<br> The result is ${result}`)
+
+
+        //call the function
+        addFunction(20,30)
+
+        const testFunction=(x,y)=>x*y
+
+        //call the function
+        const result2=testFunction(10,15)
+        document.write(`<br> The result2 is ${result2}`)
+
+        const result3=testFunction(15,1569)
+        document.write(`<br> The result is ${result3}`)
+
+    </script>
+</body>
+</html>
