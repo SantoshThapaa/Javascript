@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch statement</title>
+</head>
+<body>
+    <script>
+        const x=parseFloat(prompt('Enter the first number'))
+        const y=parseFloat(prompt('Enter the second number'))
+        const operator=prompt('Tell me what you want to do? eg:+,-,*,/,%')
+        
+        switch (operator){
+            case '+' : 
+                const a=x+y
+                document.write(`The sum is ${a}`)
+                break
+            case '-' : 
+                const b=x-y
+                document.write(`The subtraction is ${b}`)
+                break
+            case '*' : 
+                const c=x*y
+                document.write(`The multiplication is ${c}`)
+                break
+            case '/' : 
+                const d=x+y
+                document.write(`The division is ${d}`)
+                break
+            case '%' : 
+                const e=x%y
+                document.write(`The sum is ${e}`)
+                break
+            default:
+                document.write(`Invalid operator`)
+
+        }
+    </script>
+</body>
+</html>
