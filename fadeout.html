@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hide H1 and Fade Out Element</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<h1>This is a Heading</h1>
+<button id="hideButton">Hide H1</button>
+<button id="fadeOutButton">Fade Out Element</button>
+
+<div id="fadeId" style="width: 200px; height: 200px; background-color: rgb(173, 191, 197); margin-top: 20px; border: 1px black;">
+    This is the element with ID "fadeId"
+</div>
+<script>
+$(document).ready(function() {
+    // Hide H1 element on button click
+    $('#hideButton').click(function() {
+        $('h1').hide();
+    });
+
+    // Fade out element with id "fadeId" on button click
+    $('#fadeOutButton').click(function() {
+        $('#fadeId').fadeOut();
+    });
+});
+</script>
+</body>
+</html>
