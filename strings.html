@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Method</title>
+</head>
+<body>
+    <script>
+        const text='Welcome to Durshikshya to read programming to language for web'
+        document.write(`${text} <br>`)
+        // to count the no. of chararcters in a string use .length
+        document.write(`${text.length} <br>`)
+        // to find the index of a string use .indexof()
+        document.write(`${text.indexOf('to')} <br>`)
+        // to find the last index of repeated string  use .lastIndexOf()
+        document.write(`${text.lastIndexOf('to')} <br>`)
+        // search
+        document.write(`${text.search('to')} <br>`)
+        // includes() -> it checks if a particular string is present or not.
+        document.write(`${text.includes('read')} <br>`)
+        // .split()
+        document.write(`${text.split(' ')} <br>`)
+        console.log(text.split(' '))
+        //.toUpperCase()
+        document.write(`${text.toUpperCase(' ')} <br>`)
+        //.toLowerCase()
+        document.write(`${text.toLowerCase(' ')} <br>`)
+        //.replace()
+        document.write(`${text.replace('to','too')} <br>`)
+        // FOr the regular expresion we usbelow between two / / 
+        document.write(`${text.replace('/to/g','too')} <br>`)
+        //.replaceAll()
+        document.write(`${text.replaceAll('to','too')} <br>`)
+
+        //substring --> small part of a string
+        // slice(start,end)   substring andd slice both are same --> slice(3,10)
+        // substring(start, end)
+        // substr(start, length) --> substr(3,10) --> it takes from 3 to 13
+
+        document.write(`${text.slice(0,22)}...... <br>`)
+        document.write(`${text.substring(5,22)}...... <br>`) 
+        document.write(`${text.substr(5,22)}...... <br>`)
+
+        //.trim() -> remove whitespace of begining and last
+        test=" hello "
+        test.trim()
+        document.write(`${test} <br>`)
+
+        //toSting() -> convert to string
+        x=20
+        y=toString(x)
+        document.write(typeof(y))
+
+        //charAt()
+
+        // charCodeAt
+    </script>
+</body>
+</html>
